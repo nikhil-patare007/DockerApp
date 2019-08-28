@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <body>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+        <p>
+            <form>
+                <button type="submit" formaction="http://localhost:5000/insert_data">Insert data</button>
+            </form>
+        </p>
+    </body>
+</html>

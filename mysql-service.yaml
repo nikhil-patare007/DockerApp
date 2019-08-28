@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-service
+spec:
+  selector:
+    component: mysqldb
+  ports:
+  - protocol: TCP
+    port: 6379
+    targetPort: 3306
